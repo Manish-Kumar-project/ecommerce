@@ -14,6 +14,7 @@ public class ProductService {
     private ProductRepository productRepository;
 
     public Product addProduct(Product product){
+        product.setProductStatus("success");
         Product saveProduct = productRepository.save(product);
         return saveProduct;
     }

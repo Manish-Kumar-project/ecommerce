@@ -12,16 +12,18 @@ public class Product {
     private String productName;
     private String productCode;
     private String productUniqueId;
+    private String productStatus;
 
     public Product() {
     }
 
-    public Product(Integer id, Integer productId, String productName, String productCode, String productUniqueId) {
+    public Product(Integer id, Integer productId, String productName, String productCode, String productUniqueId, String productStatus) {
         this.id = id;
         this.productId = productId;
         this.productName = productName;
         this.productCode = productCode;
         this.productUniqueId = productUniqueId;
+        this.productStatus = productStatus;
     }
 
     public Integer getId() {
@@ -62,5 +64,13 @@ public class Product {
 
     public void setProductUniqueId(String productUniqueId) {
         this.productUniqueId = productUniqueId;
+    }
+
+    public String getProductStatus() {
+        return productStatus;
+    }
+
+    public void setProductStatus(String productStatus) {
+        this.productStatus = productStatus;
     }
 }
